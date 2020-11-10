@@ -81,19 +81,16 @@ foreach ($superheroes as $hero){
 
 <?php if($data != ""): ?>
     <?php if($store_char != ""): ?>
-        <?= "<h2>RESULT</h2>" ?> 
         <?= "<hr>"?> 
         <?= "<h3>$store_al</h3>" ?> 
         <?= "<h4>A.K.A $store_name</h4>"?> 
         <?= "<p> ${store_char['biography']}</p>"?>
     <?php endif; ?>
     <?php if($store_char === ""): ?>
-        <?= "<h2>RESULT</h2>" ?> 
         <?= "<hr>" ?> 
         <h3>SUPERHERO NOT FOUND</h3>
     <?php endif; ?>
 <?php else: ?>
-    <?= "<h2>RESULT</h2>" ?> 
     <?= "<hr>"?> 
     <ul>
     <?php foreach ($superheroes as $superhero): ?>
